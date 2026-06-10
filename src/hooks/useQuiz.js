@@ -1,6 +1,6 @@
 import { useState, useCallback} from "react"
-import { questions, calcResults} from "/Users/alfredthebuttler/Downloads/Work/Stardew Seasons quiz/stardew-season-quiz/src/data/seasons.js"
-import { villagers, villagersBySeason} from "/Users/alfredthebuttler/Downloads/Work/Stardew Seasons quiz/stardew-season-quiz/src/data/villagers.js"
+import { questions, calcResults} from "../data/seasons.js"
+import { villagers, villagersBySeason} from "../data/villagers.js"
 
 const EMPTY_SCORES = { spring: 0, summer: 0, fall: 0, winter: 0}
 function pickVillager(winner) {
