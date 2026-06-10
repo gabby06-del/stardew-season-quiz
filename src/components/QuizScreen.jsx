@@ -1,4 +1,4 @@
-import "/Users/alfredthebuttler/Downloads/Work/Stardew Seasons quiz/stardew-season-quiz/src/components/QuizScreen.css"
+import "../components/QuizScreen.css"
 
 export function QuizScreen({ question, questionIndex, totalQuestions, onAnswer}) {
 

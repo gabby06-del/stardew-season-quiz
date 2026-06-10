@@ -1,4 +1,4 @@
-import "/Users/alfredthebuttler/Downloads/Work/Stardew Seasons quiz/stardew-season-quiz/src/components/IntroScreen.css"
+import "../components/IntroScreen.css"
 
 export function IntroScreen({onStart}) {
     return (
