@@ -1,15 +1,4 @@
-@font-face {
-  font-family: "StardewValleyCAPS";
-  src: url("/fonts/Stardew Valley ALL CAPS.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "StardewValley";
-  src: url("/fonts/Stardew Valley Regular.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
+
 
 .intro {
   display: flex;
@@ -30,28 +19,16 @@
 }
 
 .intro__title-top {
-  font-family: "StardewValley", monospace;
+  font-family: "Pixelify Sans", sans-serif;
   font-size: 28px;
   line-height: 1.6;
-  color: #5a3e1b;
-  text-shadow:
-    0 0 0 currentColor,
-    1px 0 0 currentColor,
-    -1px 0 0 currentColor,
-    0 1px 0 currentColor,
-    0 -1px 0 currentColor;
+  color: #bd9462;
 }
 
 .intro__title-bottom {
-  font-family: "StardewValley", monospace;
-  font-size: 20px;
-  color: #7a5c2e;
-  text-shadow:
-    0 0 0 currentColor,
-    1px 0 0 currentColor,
-    -1px 0 0 currentColor,
-    0 1px 0 currentColor,
-    0 -1px 0 currentColor;
+    font-family: "Pixelify Sans", sans-serif;
+  font-size: 28px;
+  color: #bd9462;
 }
 
 .intro__subtitle {
@@ -59,13 +36,7 @@
   color: #6b5740;
   line-height: 1.7;
   max-width: 340px;
-  font-family: "StardewValley", monospace;
-  text-shadow:
-    0 0 0 currentColor,
-    1px 0 0 currentColor,
-    -1px 0 0 currentColor,
-    0 1px 0 currentColor,
-    0 -1px 0 currentColor;
+  font-family: "Pixelify Sans", sans-serif;
 }
 
 .intro__seasons {
@@ -101,7 +72,7 @@
   width: 100%;
   max-width: 280px;
   padding: 16px;
-  font-family: "StardewValley", monospace;
+  font-family: "Pixelify Sans", sans-serif;
   font-size: 18px;
   background: #a8d878;
   color: #2d5a1b;
@@ -110,12 +81,6 @@
   cursor: pointer;
   letter-spacing: 0.03em;
   transition: transform 0.1s, background 0.1s;
-  text-shadow:
-    0 0 0 currentColor,
-    1px 0 0 currentColor,
-    -1px 0 0 currentColor,
-    0 1px 0 currentColor,
-    0 -1px 0 currentColor;
   box-shadow: 0 4px 0 #5a8a2e;
 }
 
@@ -131,13 +96,7 @@
 }
 
 .intro__credit {
-  font-size: 12px;
+  font-size: 6px;
   color: #a08060;
-  font-family: "StardewValley", monospace;
-  text-shadow:
-    0 0 0 currentColor,
-    1px 0 0 currentColor,
-    -1px 0 0 currentColor,
-    0 1px 0 currentColor,
-    0 -1px 0 currentColor;
+  font-family: "Pixelify Sans", sans-serif;
 }
