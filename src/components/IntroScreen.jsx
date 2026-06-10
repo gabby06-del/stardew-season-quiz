@@ -4,7 +4,11 @@ export function IntroScreen({onStart}) {
     return (
         <div className="intro">
             <div className="intro__title">
-                <span className="intro__title-top pixel-text">✿ Which Stardew Season ✿</span>
+                <span className="intro__title-top">
+                     <span className="intro__flower">✿</span>
+                     {" "}Which Stardew Season{" "}
+                     <span className="intro__flower">✿</span>
+                    </span>
                 <span className="intro__title-bottom">are you?</span>
             </div>
             <p className="intro__subtitle">

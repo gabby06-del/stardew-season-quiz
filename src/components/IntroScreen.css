@@ -12,6 +12,11 @@
   justify-content: center;
 }
 
+.intro__flower {
+  color: #5a8a2e;
+  text-shadow: 2px 3px 0px #2d5a1b;
+}
+
 .intro__title {
   display: flex;
   flex-direction: column;
@@ -20,15 +25,20 @@
 
 .intro__title-top {
   font-family: "Pixelify Sans", sans-serif;
-  font-size: 28px;
+  font-size: 34px;
   line-height: 1.6;
+  font-weight: 700;
   color: #bd9462;
+  text-shadow: 2px 3px 0px #7c583b;
 }
 
 .intro__title-bottom {
     font-family: "Pixelify Sans", sans-serif;
-  font-size: 28px;
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 1.6;
   color: #bd9462;
+  text-shadow: 2px 3px 0px #7c583b;
 }
 
 .intro__subtitle {
