@@ -11,109 +11,133 @@
   font-style: normal;
 }
 
-.intro { 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 2.5rem 1.5rem 2rem;
-    gap: 1.5rem;
-    text-align: center;
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem 2rem 2.5rem;
+  gap: 1.75rem;
+  text-align: center;
+  background: #f9f3e8;
+  min-height: 500px;
+  justify-content: center;
+}
+
+.intro__title {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
 }
 
 .intro__title-top {
-    font-family: "StardewValley", monospace;
-    font-size: 12px;
-    line-height: 1.8;
-    color: #7e4f47;
-    text-shadow: 
+  font-family: "StardewValley", monospace;
+  font-size: 28px;
+  line-height: 1.6;
+  color: #5a3e1b;
+  text-shadow:
     0 0 0 currentColor,
-     1px 0 0 currentColor,
+    1px 0 0 currentColor,
     -1px 0 0 currentColor,
-     0 1px 0 currentColor,
+    0 1px 0 currentColor,
     0 -1px 0 currentColor;
 }
+
 .intro__title-bottom {
-    font-family: "StardewValley", monospace;
-    font-size: 10px;
-    color: var(--color-text-primary);
-    text-shadow: 
+  font-family: "StardewValley", monospace;
+  font-size: 20px;
+  color: #7a5c2e;
+  text-shadow:
     0 0 0 currentColor,
-     1px 0 0 currentColor,
+    1px 0 0 currentColor,
     -1px 0 0 currentColor,
-     0 1px 0 currentColor,
+    0 1px 0 currentColor,
     0 -1px 0 currentColor;
+}
 
 .intro__subtitle {
-  font-size: 14px;
-  color: var(--color-text-secondary);
+  font-size: 15px;
+  color: #6b5740;
   line-height: 1.7;
   max-width: 340px;
+  font-family: "StardewValley", monospace;
+  text-shadow:
+    0 0 0 currentColor,
+    1px 0 0 currentColor,
+    -1px 0 0 currentColor,
+    0 1px 0 currentColor,
+    0 -1px 0 currentColor;
 }
 
 .intro__seasons {
   display: flex;
   flex-direction: row;
-  gap: 12px;
+  gap: 16px;
   justify-content: center;
 }
 
 .intro__pip {
-  width: 56px;
-  height: 56px;
+  width: 64px;
+  height: 64px;
   border-radius: 12px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 28px;
-  border: 1.5px solid transparent;
+  font-size: 32px;
+  border: 2px solid transparent;
   transition: transform 0.15s;
   cursor: default;
 }
 
 .intro__pip:hover {
-  transform: scale(1.1) rotate(-4deg);
+  transform: scale(1.12) rotate(-4deg);
 }
 
-.intro__pip--spring { background: #fdf2f8; border-color: #f9a8d4; }
-.intro__pip--summer { background: #fffbeb; border-color: #fcd34d; }
-.intro__pip--fall   { background: #fff3ed; border-color: #fd9274; }
-.intro__pip--winter { background: #eff6ff; border-color: #93c5fd; }
-
+.intro__pip--spring { background: #fce4ec; border-color: #f48fb1; }
+.intro__pip--summer { background: #fff8e1; border-color: #ffe082; }
+.intro__pip--fall   { background: #fbe9e7; border-color: #ffab91; }
+.intro__pip--winter { background: #e3f2fd; border-color: #90caf9; }
 
 .intro__btn {
   width: 100%;
-  max-width: 320px;
-  padding: 14px;
+  max-width: 280px;
+  padding: 16px;
   font-family: "StardewValley", monospace;
-  font-size: 11px;
-  background: #4ade80;
-  color: #14532d;
-  border: none;
-  border-radius: 8px;
+  font-size: 18px;
+  background: #a8d878;
+  color: #2d5a1b;
+  border: 3px solid #5a8a2e;
+  border-radius: 4px;
   cursor: pointer;
-  letter-spacing: 0.05em;
-  transition: transform 0.1s, box-shadow 0.1s;
-  text-shadow: 
+  letter-spacing: 0.03em;
+  transition: transform 0.1s, background 0.1s;
+  text-shadow:
     0 0 0 currentColor,
-     1px 0 0 currentColor,
+    1px 0 0 currentColor,
     -1px 0 0 currentColor,
-     0 1px 0 currentColor,
+    0 1px 0 currentColor,
     0 -1px 0 currentColor;
+  box-shadow: 0 4px 0 #5a8a2e;
 }
 
 .intro__btn:hover {
-  transform: scale(1.02);
-  box-shadow: 0 4px 16px rgba(74, 222, 128, 0.4);
+  background: #bce88a;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 0 #5a8a2e;
 }
 
 .intro__btn:active {
-  transform: scale(0.97);
+  transform: translateY(2px);
+  box-shadow: 0 2px 0 #5a8a2e;
 }
 
 .intro__credit {
-  font-size: 11px;
-  color: var(--color-text-tertiary);
+  font-size: 12px;
+  color: #a08060;
+  font-family: "StardewValley", monospace;
+  text-shadow:
+    0 0 0 currentColor,
+    1px 0 0 currentColor,
+    -1px 0 0 currentColor,
+    0 1px 0 currentColor,
+    0 -1px 0 currentColor;
 }
-}
-
-
