@@ -1,5 +1,6 @@
 import { useQuiz } from "./hooks/useQuiz.js"
 import { IntroScreen } from "./components/IntroScreen.jsx"
+import { QuizScreen } from "./components/QuizScreen.jsx"
 import "./App.css"
 
 export default function App() {
@@ -14,7 +15,12 @@ export default function App() {
         )}
 
         {quiz.phase === "quiz" && (
-          <p>Quiz screen coming soon</p>
+           <QuizScreen
+            question={quiz.question}
+            questionIndex={quiz.questionIndex}
+            totalQuestions={quiz.totalQuestions}
+            onAnswer={quiz.answer}
+            />
         )}
 
         {quiz.phase === "result" && (
@@ -25,3 +31,5 @@ export default function App() {
     </div>
   )
 }
+
+
