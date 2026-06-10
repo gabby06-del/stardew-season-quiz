@@ -1,5 +1,5 @@
 
-
+import { useEffect, useState, useRef } from "react"
 import "./ResultCard.css"
 import { seasons } from "../data/seasons.js"
 
@@ -7,6 +7,14 @@ export function ResultCard({ results, onReset }) {
 
   const { winner, percentages, villager } = results
   const season = seasons[winner]
+  const [animate, setAnimate] = useState(false)
+  const [saving, setSaving] = useState(false)
+  const cardRef = useRef(null)
+
+   useEffect(() => {
+    const timer = setTimeout(() => setAnimate(true), 50)
+    return () => clearTimeout(timer)
+  }, [])
 
   const seasonOrder = ["spring", "summer", "fall", "winter"]
   const seasonEmojis = {
@@ -21,11 +29,40 @@ export function ResultCard({ results, onReset }) {
     fall:   "#ea580c",
     winter: "#60a5fa",
   }
+ async function handleSave() {
+    console.log("save button clicked") 
+    if (!cardRef.current) return
+    setSaving(true)
 
+    try {
+      const html2canvas = (await import("html2canvas")).default
+
+      const canvas = await html2canvas(cardRef.current, {
+        backgroundColor: season.colorLight,
+        scale: 2,          
+        useCORS: true,
+        logging: false,
+      })
+
+      const link = document.createElement("a")
+      link.download = `stardew-${winner}-season.png`
+      link.href = canvas.toDataURL("image/png")
+      link.click()
+
+    } catch (error) {
+      console.error("Save failed:", error)
+      alert("Couldn't save the card — try taking a screenshot instead!")
+    } finally {
+      setSaving(false)
+    }
+  }
   return (
-    <div className="result" style={{ background: season.colorLight }}>
+    <div 
+        className="result" style={{ background: season.colorLight }}>
+            <div ref={cardRef} className="result__screenshot"
+              style={{ background: season.colorLight, padding: "1.25rem" }}>
 
-      <div
+      <div 
         className="result__card"
         style={{
           borderColor: season.colorBorder,
@@ -97,11 +134,16 @@ export function ResultCard({ results, onReset }) {
           <div className="result__villager-why">{villager.matchDesc}</div>
         </div>
       </div>
+ </div>
 
      
       <div className="result__actions">
-        <button className="result__btn result__btn--share">
-          📤 Save Card
+        <button 
+            className="result__btn result__btn--share"
+            onClick={handleSave}
+            disabled={saving}
+        >
+          {saving? "Saving..." : "📤 Save Card"}
         </button>
         <button
           className="result__btn result__btn--retry"

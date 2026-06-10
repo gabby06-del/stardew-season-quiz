@@ -33,14 +33,14 @@ export const seasons = {
         id: "fall",
         name: "Fall",
         emoji: "🍂",
-        color: "#f47b20",
-        colorLight: "#ffd200",
+        color: "#f47b20ff",
+        colorLight: "#ffeb90ff",
         ColorBorder: "#f79762",
         colorDark: "#f05133",
         description:
             "Introspective, grounded, and creative - you find meaning in the mundane. Fall's harvest energy fits you to a tee. You probably have strong opinions about the right fall aesthetiv and how to spend a cozy night in.",
         cardTagline: "Harvest, meaning, deep",
-        cropts: ["🎃", "🍁", "🍄‍🟫"], 
+        crops: ["🎃", "🍁", "🍄‍🟫"], 
     },
 
     winter: {

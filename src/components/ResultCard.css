@@ -232,3 +232,10 @@
 
 .result__btn--retry:hover  { box-shadow: 0 5px 0 #c4b89a; }
 .result__btn--retry:active { box-shadow: 0 1px 0 #c4b89a; }
+
+.result__screenshot {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  border-radius: 12px;
+}
