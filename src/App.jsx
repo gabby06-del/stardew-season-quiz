@@ -1,6 +1,7 @@
 import { useQuiz } from "./hooks/useQuiz.js"
 import { IntroScreen } from "./components/IntroScreen.jsx"
 import { QuizScreen } from "./components/QuizScreen.jsx"
+import { ResultCard } from "./components/ResultCard.jsx"
 import "./App.css"
 
 export default function App() {
@@ -24,7 +25,10 @@ export default function App() {
         )}
 
         {quiz.phase === "result" && (
-          <p>Result screen coming soon</p>
+          <ResultCard
+            results={quiz.results}
+            onReset={quiz.reset}
+          />
         )}
 
       </div>

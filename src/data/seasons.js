@@ -59,7 +59,6 @@ export const seasons = {
 
 }
 
-// Quiz questions??
 
 export const questions = [
     {
@@ -67,7 +66,7 @@ export const questions = [
         text: "Pick a colour palette that feels the most you.",
         answers: [
             { emoji: "🌸", text: "Blush pinks and soft greens",
-            scores: { spring: 3, summer: 2, fall: 0, winter: 0}
+            scores: { spring: 3, summer: 1, fall: 0, winter: 0}
             },
             { emoji: "🌊", text: " Jewel tones and sandy yellows", 
             scores: { spring: 1, summer: 3, fall: 0, winter: 0}
@@ -85,16 +84,16 @@ export const questions = [
         text: "Which aesthetic feels most like 'you'?",
         answers: [
             { emoji: "🍓", text: "Cottagecore",
-            scores: { spring: 3, summer: 1, fall: 1, winter: 0}
+            scores: { spring: 3, summer: 1, fall: 0, winter: 0}
             },
             { emoji: "🍋", text: "Clean girl", 
             scores: { spring: 1, summer: 3, fall: 0, winter: 0}
             },
             { emoji: "☕️", text: "Vintage",
-            scores: { spring: 0, summer: 1, fall: 3, winter: 0}
+            scores: { spring: 0, summer: 0, fall: 3, winter: 0}
             },
             { emoji: "🖤", text: "Office siren",
-            scores: { spring: 0, summer: 1, fall: 0, winter: 3}
+            scores: { spring: 0, summer: 0, fall: 0, winter: 3}
             },
         ]
     },
@@ -103,13 +102,13 @@ export const questions = [
         text: "What is your go-to drink order?",
         answers: [
             { emoji: "🫚", text: "Chai latte",
-            scores: { spring: 1, summer:0, fall: 3, winter: 1}
+            scores: { spring: 0, summer:0, fall: 3, winter: 1}
             },
             { emoji: "🍪", text: "Mocha",
             scores: { spring: 0, summer: 0, fall: 1, winter: 3}
             },
             { emoji: "🍵", text: "Matcha Latte",
-            scores: { spring: 3, summer: 2, fall: 1, winter: 1}
+            scores: { spring: 3, summer: 0, fall: 1, winter: 0}
             },
             { emoji: "🍹", text: "Strawberry refresher",
             scores: { spring: 1, summer: 3, fall: 0, winter: 0}
@@ -121,16 +120,16 @@ export const questions = [
         text: "What do you do to recharge after a long week?",
         answers: [
             { emoji: "🪻", text: "Go on a hike",
-            scores: { spring: 3, summer: 2, fall: 0, winter: 0}
+            scores: { spring: 3, summer: 1, fall: 0, winter: 0}
             },
             { emoji: "🥂", text: "Go out with friends",
-            scores: { spring: 1, summer: 3, fall: 0, winter: 0}
+            scores: { spring: 0, summer: 3, fall: 0, winter: 0}
             },
             { emoji: "🍿", text: "Stay in and watch a show",
             scores: { spring: 0, summer: 0, fall: 1, winter: 3}
             },
             { emoji: "🎨", text: "Go thrifting or work on a hobby",
-            scores: { spring: 0, summer: 1, fall: 3, winter: 0}
+            scores: { spring: 0, summer: 0, fall: 3, winter: 0}
             },
         ]
 
@@ -149,7 +148,7 @@ export const questions = [
             scores: { spring: 1, summer: 4, fall: 0, winter: 0}
             },
             { emoji: "🧸", text: "Calm and reserved - you are independent and highly observant making you a peaceful presence in peoples lives.",
-            scores: { spring: 0, summer: 1, fall: 0, winter: 4}
+            scores: { spring: 0, summer: 0, fall: 0, winter: 4}
             },
         ]
 
@@ -159,16 +158,16 @@ export const questions = [
         text: "What food would you big-back no matter what",
         answers: [
             { emoji: "🍟", text: "McDonalds kids meal",
-            scores: { spring: 2, summer: 4, fall: 1, winter: 1}
+            scores: { spring: 1, summer: 3, fall: 0, winter: 1}
             },
             { emoji: "🍜", text: "Ramen (package not restaurant)",
-            scores: { spring: 0, summer: 0, fall: 1, winter: 4}
+            scores: { spring: 0, summer: 0, fall: 1, winter: 3}
             },
             { emoji: "🥐", text: "Chocolate croissant",
-            scores: { spring: 1, summer: 0, fall: 4, winter: 1}
+            scores: { spring: 1, summer: 0, fall: 3, winter: 1}
             },
             { emoji: "🍷", text: "Girl dinner",
-            scores: { spring: 4, summer: 2, fall: 0, winter: 0}
+            scores: { spring: 3, summer: 1, fall: 0, winter: 0}
             },
         ]
 
@@ -178,10 +177,10 @@ export const questions = [
         text: "What matters the most to you in a home?",
         answers: [
             { emoji: "🪟", text: "Lots of natural light",
-            scores: { spring: 3, summer: 1, fall: 0, winter: 0}
+            scores: { spring: 0, summer: 3, fall: 0, winter: 0}
             },
             { emoji: "💐", text: "A big garden or outdoor area",
-            scores: { spring: 1, summer: 3, fall: 0, winter: 0}
+            scores: { spring: 3, summer: 0, fall: 0, winter: 0}
             },
             { emoji: "🪵", text: "Cozy textures and a fireplace",
             scores: { spring: 0, summer: 0, fall: 3, winter: 2}
@@ -203,7 +202,7 @@ export const questions = [
             scores: { spring: 1, summer: 3, fall: 0, winter: 0}
             },
             { emoji: "🛋️", text: "Calm with a routine life ",
-            scores: { spring: 0, summer: 1, fall: 3, winter: 1}
+            scores: { spring: 0, summer: 0, fall: 3, winter: 1}
             },
             { emoji: "📈", text: "Focused and pursuing your goals",
             scores: { spring: 0, summer: 0, fall: 1, winter: 3}

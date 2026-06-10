@@ -6,10 +6,10 @@ export function IntroScreen({onStart}) {
             <div className="intro__title">
                 <span className="intro__title-top">
                      <span className="intro__flower">✿</span>
-                     {" "}Which Stardew Season{" "}
+                     {" "}Which Stardew Valley {" "}
                      <span className="intro__flower">✿</span>
                     </span>
-                <span className="intro__title-bottom">are you?</span>
+                <span className="intro__title-bottom">season are you?</span>
             </div>
             <p className="intro__subtitle">
                 Answer 8 personality-related questions to discover your season, your percentage breakdown, and your villager match.

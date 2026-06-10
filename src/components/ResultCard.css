@@ -1,0 +1,234 @@
+
+
+.result {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+
+.result__card {
+  border-radius: 16px;
+  border: 2px solid;
+  overflow: hidden;
+}
+
+.result__card-stripe {
+  padding: 8px 16px;
+  display: flex;
+  justify-content: center;
+}
+
+.result__stripe-label {
+  font-family: "Pixelify Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: white;
+  letter-spacing: 0.2em;
+  text-shadow: 1px 1px 0px rgba(0,0,0,0.2);
+}
+
+.result__card-body {
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.result__season-emoji {
+  font-size: 64px;
+  line-height: 1;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.result__season-name {
+  font-family: "Pixelify Sans", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+  text-shadow: 2px 3px 0px rgba(0,0,0,0.15);
+}
+
+.result__tagline {
+  font-family: "Pixelify Sans", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  opacity: 0.7;
+  margin-bottom: 1rem;
+  letter-spacing: 0.05em;
+}
+
+.result__desc {
+  font-family: "Pixelify Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.8;
+  opacity: 0.85;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.result__crops {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 1.25rem;
+  font-size: 28px;
+}
+
+
+.result__breakdown {
+  background: #fffdf5;
+  border-radius: 12px;
+  padding: 1.25rem;
+  border: 2px solid #e0d5c0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  box-shadow: 0 3px 0 #e0d5c0;
+}
+
+.result__breakdown-title {
+  font-family: "Pixelify Sans", sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  color: #a08060;
+  margin-bottom: 0.25rem;
+}
+
+.result__bar-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.result__bar-label {
+  font-family: "Pixelify Sans", sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  color: #5a3e1b;
+  width: 80px;
+  flex-shrink: 0;
+}
+
+.result__bar-track {
+  flex: 1;
+  height: 12px;
+  background: #e0d5c0;
+  border-radius: 6px;
+  overflow: hidden;
+  border: 1px solid #c4b89a;
+}
+
+.result__bar-fill {
+  height: 100%;
+  border-radius: 6px;
+  transition: width 1s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.result__bar-pct {
+  font-family: "Pixelify Sans", sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  color: #5a3e1b;
+  width: 36px;
+  text-align: right;
+  flex-shrink: 0;
+}
+
+
+.result__villager {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  background: #fffdf5;
+  border: 2px solid #e0d5c0;
+  border-radius: 12px;
+  padding: 1rem 1.25rem;
+  box-shadow: 0 3px 0 #e0d5c0;
+}
+
+.result__villager-avatar {
+  width: 56px;
+  height: 56px;
+  border-radius: 10px;
+  background: #f0e8d0;
+  border: 2px solid #c4b89a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  flex-shrink: 0;
+}
+
+.result__villager-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.result__villager-eyebrow {
+  font-family: "Pixelify Sans", sans-serif;
+  font-size: 11px;
+  font-weight: 400;
+  color: #a08060;
+  letter-spacing: 0.08em;
+}
+
+.result__villager-name {
+  font-family: "Pixelify Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: #5a3e1b;
+  text-shadow: 1px 2px 0px #c4b89a;
+}
+
+.result__villager-why {
+  font-family: "Pixelify Sans", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  color: #6b5740;
+  line-height: 1.6;
+  margin-top: 2px;
+}
+
+
+.result__actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.result__btn {
+  padding: 14px;
+  border-radius: 6px;
+  font-family: "Pixelify Sans", sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  border: 2px solid;
+  transition: transform 0.1s, box-shadow 0.1s;
+}
+
+.result__btn:hover  { transform: translateY(-2px); }
+.result__btn:active { transform: translateY(2px);  }
+
+.result__btn--share {
+  background: #a8d878;
+  color: #2d5a1b;
+  border-color: #5a8a2e;
+  box-shadow: 0 3px 0 #5a8a2e;
+}
+
+.result__btn--share:hover { box-shadow: 0 5px 0 #5a8a2e; }
+.result__btn--share:active { box-shadow: 0 1px 0 #5a8a2e; }
+
+.result__btn--retry {
+  background: #fffdf5;
+  color: #5a3e1b;
+  border-color: #c4b89a;
+  box-shadow: 0 3px 0 #c4b89a;
+}
+
+.result__btn--retry:hover  { box-shadow: 0 5px 0 #c4b89a; }
+.result__btn--retry:active { box-shadow: 0 1px 0 #c4b89a; }
