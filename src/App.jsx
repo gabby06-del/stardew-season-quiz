@@ -1,3 +1,8 @@
+import { seasons, questions, calcResults } from './data/seasons.js'
+console.log(seasons)
+console.log(questions)
+console.log(calcResults({ spring: 10, summer: 5, fall: 3, winter: 2 }))
+
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'

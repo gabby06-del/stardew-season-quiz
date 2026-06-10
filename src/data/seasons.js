@@ -82,7 +82,7 @@ export const questions = [
     },
     {
         id: "q2",
-        text: "Which aesthetic feels nost like 'you'?",
+        text: "Which aesthetic feels most like 'you'?",
         answers: [
             { emoji: "🍓", text: "Cottagecore",
             scores: { spring: 3, summer: 1, fall: 2, winter: 0}
@@ -216,7 +216,7 @@ export const questions = [
 export function calcResults(scores) {
     const total = Object.values(scores).reduce((a,b) => a + b, 0)
     const percentages = {}
-    Object.entries(scores) .forEach(([KeyboardEvent, value]) => {
+    Object.entries(scores) .forEach(([key, value]) => {
         percentages[key] = total > 0 ? Math.round((value/total) * 100):0
     })
 
