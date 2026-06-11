@@ -1,16 +1,93 @@
-# React + Vite
+# 🌸 Which Stardew Season Are You?
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A personality quiz that matches you with a Stardew Valley season and villager based on your answers. Built as a personal project and currently in active development.
 
-Currently, two official plugins are available:
+**🚧 Work in progress — UI redesign underway in Figma**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+👉 **[Find out which Stardew Valley Season you are!](https://stardew-season-quiz.vercel.app)**
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## What it does
 
-## Expanding the ESLint configuration
+- 8 personality questions with weighted scoring across all four seasons
+- Percentage breakdown showing how much of each season you are
+- Villager match based on your result — matching is based from a hand-written personality mapping of all 12 bachelors and bachelorettes 
+- Downloadable result card you can save and share
+- Fully responsive, works on mobile and desktop
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## Built with
+
+- React 18
+- Vite
+- html2canvas 
+- Deployed on Vercel
+
+---
+
+## Project structure
+
+```
+src/
+  data/
+    villagers.js      ← personality mapping for all 12 characters
+    seasons.js        ← season definitions, quiz questions, scoring logic
+  hooks/
+    useQuiz.js        ← quiz state machine (intro → quiz → result)
+  components/
+    IntroScreen.jsx   ← landing screen
+    QuizScreen.jsx    ← question + answer UI
+    ResultCard.jsx    ← result, breakdown bars, villager match, save card
+  App.jsx
+  App.css
+```
+
+---
+
+## How the scoring works
+
+Each answer adds points to one or more seasons. After all 8 questions the season with the highest total wins. Percentages are calculated by dividing each season's score by the total points accumulated.
+
+The villager match is assigned based on the winning season — each season has a pool of characters whose personality traits were mapped by hand before any code was written.
+
+---
+
+## Current status
+
+This is a rough draft. The quiz logic and data layer are complete. The UI is being redesigned in Figma before the next round of development.
+
+**Done:**
+- [x] Personality mapping for all 12 villagers
+- [x] Quiz logic and scoring
+- [x] All three screens (intro, quiz, result)
+- [x] Percentage breakdown bars
+- [x] Villager match
+- [x] Downloadable result card
+- [x] Deployed to Vercel
+
+**In progress:**
+- [ ] UI redesign in Figma
+- [ ] Pixel art sprites for villagers
+- [ ] Shareable URL with result encoded
+- [ ] More questions for better accuracy
+
+---
+
+## Running locally
+
+```bash
+git clone https://github.com/gabby06-del/stardew-season-quiz.git
+cd stardew-season-quiz
+npm install
+npm run dev
+```
+
+Opens at `http://localhost:5173`
+
+---
+
+## Notes
+
+Fan project — not affiliated with ConcernedApe or the Stardew Valley IP.
