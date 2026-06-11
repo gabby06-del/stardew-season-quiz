@@ -12,7 +12,7 @@ A personality quiz that matches you with a Stardew Valley season and villager ba
 
 - 8 personality questions with weighted scoring across all four seasons
 - Percentage breakdown showing how much of each season you are
-- Villager match based on your result — matching is based from a hand-written personality mapping of all 12 bachelors and bachelorettes 
+- Villager match based on your result, matching is based from a hand-written personality mapping of all 12 bachelors and bachelorettes 
 - Downloadable result card you can save and share
 - Fully responsive, works on mobile and desktop
 
@@ -50,7 +50,7 @@ src/
 
 Each answer adds points to one or more seasons. After all 8 questions the season with the highest total wins. Percentages are calculated by dividing each season's score by the total points accumulated.
 
-The villager match is assigned based on the winning season — each season has a pool of characters whose personality traits were mapped by hand before any code was written.
+The villager match is assigned based on the winning season - each season has a pool of characters whose personality traits were mapped by hand before any code was written.
 
 ---
 
@@ -90,4 +90,4 @@ Opens at `http://localhost:5173`
 
 ## Notes
 
-Fan project — not affiliated with ConcernedApe or the Stardew Valley IP.
+Fan project,  not affiliated with ConcernedApe or the Stardew Valley IP.
