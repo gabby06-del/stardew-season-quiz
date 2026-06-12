@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;700&display=swap");
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  min-height: 100dvh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 2rem 1rem;
+  background: #c8e6c0;
+}
+
+.app {
+  width: 100%;
+  max-width: 560px;
+}
+
+.app__card {
+  background: #f9f3e8;
+  border-radius: 8px;
+  border: 3px solid #bd9462;
+  box-shadow:
+    0 8px 0 #7c583b,
+    0 12px 24px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  min-height: 300px;
+}
+
+.pixel-text {
+  text-shadow:
+    0 0 0 currentColor,
+    1px 0 0 currentColor,
+    -1px 0 0 currentColor,
+    0 1px 0 currentColor,
+    0 -1px 0 currentColor;
+}
