@@ -71,7 +71,7 @@ This is a rough draft. The quiz logic and data layer are complete. The UI is bei
 - [ ] UI redesign in Figma
 - [ ] Pixel art sprites for villagers
 - [ ] Shareable URL with result encoded
-- [ ] More questions for better accuracy
+
 
 ---
 
