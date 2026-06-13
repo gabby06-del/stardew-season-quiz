@@ -103,7 +103,7 @@ function LandingScreen({ onStart }: { onStart: () => void }) {
         <div style={{ padding: "2.5rem 2rem 2rem", display: "flex", flexDirection: "column", alignItems: "center", gap: "1.5rem", textAlign: "center" }}>
           <div style={{ display: "flex", flexDirection: "column", gap: "0.4rem" }}>
             {["✿ Which Stardew Valley ✿", "season are you?"].map((line, i) => (
-              <div key={i} style={{ fontFamily: PIXEL, fontSize: "clamp(20px, 5vw, 30px)", color: "#bd9462", textShadow: "2px 3px 0 #7c583b", lineHeight: 1.5 }}>
+              <div key={i} style={{ fontFamily: PIXEL, fontSize: "clamp(16px, 4vw, 22px)", color: "#bd9462", textShadow: "2px 3px 0 #7c583b", lineHeight: 1.5 }}>
                 {line}
               </div>
             ))}
